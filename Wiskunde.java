@@ -1,7 +1,7 @@
 /**
  * Een klasse met handige functies en betekeningen .
  * 
- * author Martin van Diest
+ * @author Martin van Diest
  */
 public class Wiskunde {
   
@@ -11,8 +11,8 @@ public class Wiskunde {
    * per definitie geldt : 0! = 1 en
    * 1! = 1
    * alle n >= 0
-   * param @n getal n (>= 0)
-   * return n!
+   * @param n getal n (>= 0)
+   * @return n!
    */
   public static long faculteit(long n) {
     if (n == 1) return 1;
@@ -25,8 +25,8 @@ public class Wiskunde {
    * fib(2) = fib(1) + fib(0)
    * fib(n) = fib(n-1) + fib(n-2)
    * 
-   * param @n getal n (>= 0)
-   * return n-e fibonacci getal
+   * @param n getal n (>= 0)
+   * @return n-e fibonacci getal
    */
   public static long fibonacci (long n) {
     if (n == 1 || n == 0) return 1;
@@ -57,8 +57,8 @@ public class Wiskunde {
   
   /**
    * functie delers geeft een array terug met daarin alle delers van n. (1 niet mergerekend)
-   * param @n het getal waarvan de delers worden gezocht
-   * return array met alle delers van n.
+   * @param n het getal waarvan de delers worden gezocht
+   * @return array met alle delers van n.
    */
   public static int[] delers(int n){
     int index=0;
@@ -76,7 +76,7 @@ public class Wiskunde {
   }
   
   /*
-   * hulp functie ok het aantal delers van een getal te vinden.
+   * hulp functie om het aantal delers van een getal te vinden.
    */
   private static int aantalDelers(int n){
     int count = 0;
@@ -91,9 +91,9 @@ public class Wiskunde {
   
   /**
    * functie bepaalt de Grootst Gemene Deler van twee getallen.
-   * param @a getal 1
-   * param @b getal 2
-   * result de ggd van a en b
+   * @param a getal 1
+   * @param b getal 2
+   * @return de ggd van a en b
    */
   public static int ggd(int a, int b){
     int grootste = 0;
