@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Een klasse met handige functies en betekeningen .
  * 
@@ -91,12 +93,13 @@ public class Wiskunde {
   
   /**
    * functie bepaalt de Grootst Gemene Deler van twee getallen.
+   * 
    * @param a getal 1
    * @param b getal 2
    * @return de ggd van a en b
    */
   public static int ggd(int a, int b){
-    int grootste = 0;
+    int grootste = 1;
     int[] aarr = delers(a);
     int[] barr = delers(b);
     if (aarr.length <= barr.length){
@@ -113,6 +116,21 @@ public class Wiskunde {
       }
     } 
     return grootste;
+  }
+  
+  
+  /**
+   *  Zoekt alle priemgetallen tot n. Zet deze in een arrayList. 
+   *  
+   * @param n tot welk getal moeten de priemgetallen worden gezocht.
+   * @return array met de priemgetallen TOT n.
+   */
+  public static ArrayList<Integer> priemGetallen(int n) {
+    ArrayList<Integer> lijst = new ArrayList<>();
+    for (int i = 0; i < n; i++) {
+      if (isPriem(i)) lijst.add(i);
+    }
+    return lijst;
   }
   
 }
