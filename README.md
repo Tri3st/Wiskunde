@@ -17,4 +17,11 @@ TODO :
 - perfect getal
 - KGV
 
+# Statistiek
+
+Paar statistiek en combinatoriek functies
+
+TODO :
+- n boven p berekening
+- driehoek van pascal
 
