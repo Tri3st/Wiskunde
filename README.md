@@ -11,9 +11,10 @@ So far :
 - Delers (alle delers in een array gezet)
 - aantalDelers (alleen voor binnen de klasse Wiskunde)
 - GGD
+- priemgetallen
 
 TODO :
 - perfect getal
 - KGV
-- priemgetallen
+
 
